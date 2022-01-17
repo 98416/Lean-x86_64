@@ -25,6 +25,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Send telegram message
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_TO }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
+        message: "################\n#              #\n#  编译已完成  #\n#              #\n################"
 
     - name: Get Commit Hash
       id: getHash
