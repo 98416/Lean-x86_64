@@ -22,4 +22,4 @@ git clone https://github.com/kenzok8/small-package package/openwrt-samll
 #添加额外软件包
 git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
 git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
-git clone https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
+git clone https://github.com/kiddin9/luci-theme-edge.git package/luci-theme-edge
