@@ -20,7 +20,7 @@ sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' packag
 
 #软件合集
 git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
-git clone https://github.com/kenzok8/small-package.git package/openwrt-samll
+# git clone https://github.com/kenzok8/small-package.git package/openwrt-samll
 
 #添加额外软件包
 git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
