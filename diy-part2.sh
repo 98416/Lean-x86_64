@@ -25,3 +25,4 @@ git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packag
 #添加额外软件包
 git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
 git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
+git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge.git package/luci-theme-edge
