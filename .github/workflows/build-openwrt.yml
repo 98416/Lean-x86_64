@@ -90,6 +90,9 @@ jobs:
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
+        
+    - name: Remove old package
+      run: cd openwrt/package/openwrt-packages && rm -rf luci-theme-edge
 
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
