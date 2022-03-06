@@ -62,7 +62,7 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
     
     - name: Remove lean package
-      run: cd openwrt/package/kernel && rm -rf mac80211 mt76
+      run: 
 
     - name: Cache
       uses: klever1988/cachewrtbuild@main
