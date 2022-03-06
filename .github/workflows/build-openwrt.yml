@@ -62,7 +62,7 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
     
     - name: Remove lean package
-      run: 
+      run: cd
 
     - name: Cache
       uses: klever1988/cachewrtbuild@main
