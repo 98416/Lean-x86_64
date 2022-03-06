@@ -63,6 +63,7 @@ jobs:
     
     - name: Remove lean package
       run: cd openwrt/package/lean && rm -rf luci-app-netdata
+           cd openwrt/package/kernel && rm -rf mac80211
 
     - name: Cache
       uses: klever1988/cachewrtbuild@main
@@ -92,7 +93,7 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P2_SH
         
     - name: Remove old package
-      run: cd openwrt/package/openwrt-samll && rm -rf luci-theme-edge && rm -rf package/kernel/mac80211
+      run: cd openwrt/package/openwrt-samll && rm -rf luci-theme-edge
 
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
