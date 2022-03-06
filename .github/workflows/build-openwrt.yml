@@ -63,7 +63,7 @@ jobs:
     
     - name: Remove lean package
       run: cd openwrt/package/lean && rm -rf luci-app-netdata
-           cd openwrt/package/kernel && rm -rf mac80211
+           && cd openwrt/package/kernel && rm -rf mac80211
 
     - name: Cache
       uses: klever1988/cachewrtbuild@main
