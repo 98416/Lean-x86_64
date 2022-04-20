@@ -42,7 +42,7 @@ jobs:
         
     - name: Send telegram message
       if: steps.cacheHash.outputs.cache-hit != 'true'
-      uses: appleboy/telegram-action@xusz_bot
+      uses: appleboy/telegram-action@master
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
