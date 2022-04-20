@@ -44,8 +44,8 @@ jobs:
       if: steps.cacheHash.outputs.cache-hit != 'true'
       uses: appleboy/telegram-action@master
       with:
-        to: ${{ 5306703532 }}
-        token: ${{ 5306703532:AAG8n_VQ4U87vENK2jHCG5DARSQDVNnaN3s }}
+        to: ${{ secrets.TELEGRAM_TO }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
         message: 检测到Lean源码已更新,本次更新内容为：${{ steps.getHash.outputs.commitLog }}
         
     - name: Save New Commit Hash
