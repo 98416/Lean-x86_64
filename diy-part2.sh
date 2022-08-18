@@ -19,7 +19,7 @@ sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generat
 sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' package/base-files/files/etc/sysctl.conf
 
 #软件合集
-# git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
+git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 git clone https://github.com/kenzok8/small-package.git package/openwrt-samll
 
 #添加额外软件包
